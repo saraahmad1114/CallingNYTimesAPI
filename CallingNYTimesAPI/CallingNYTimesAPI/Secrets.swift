@@ -1,5 +1,5 @@
 //
-//  NewYorkTimesAPIClient.swift
+//  Secrets.swift
 //  CallingNYTimesAPI
 //
 //  Created by Flatiron School on 10/17/16.
@@ -8,11 +8,7 @@
 
 import Foundation
 
-class NewYorkTimesAPIClient {
+struct Secrets {
 
-    class func getBestSellerInformationWith (completion:()->()){
-    
-    
-    }
-
+    let NYTimesAPIKey = "04bbe69be2134d6db5f7de899f415681"
 }

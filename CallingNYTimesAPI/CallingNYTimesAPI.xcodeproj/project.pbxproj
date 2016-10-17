@@ -16,6 +16,7 @@
 		1BE98AA51DB547450065A8D3 /* CallingNYTimesAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE98AA41DB547450065A8D3 /* CallingNYTimesAPITests.swift */; };
 		1BE98AB01DB547450065A8D3 /* CallingNYTimesAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE98AAF1DB547450065A8D3 /* CallingNYTimesAPIUITests.swift */; };
 		1BE98ABE1DB5479A0065A8D3 /* NewYorkTimesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE98ABD1DB5479A0065A8D3 /* NewYorkTimesAPIClient.swift */; };
+		1BE98AC01DB548790065A8D3 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE98ABF1DB548790065A8D3 /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		1BE98AAF1DB547450065A8D3 /* CallingNYTimesAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingNYTimesAPIUITests.swift; sourceTree = "<group>"; };
 		1BE98AB11DB547450065A8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BE98ABD1DB5479A0065A8D3 /* NewYorkTimesAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewYorkTimesAPIClient.swift; path = ../NewYorkTimesAPIClient.swift; sourceTree = "<group>"; };
+		1BE98ABF1DB548790065A8D3 /* Secrets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				1BE98ABD1DB5479A0065A8D3 /* NewYorkTimesAPIClient.swift */,
+				1BE98ABF1DB548790065A8D3 /* Secrets.swift */,
 				1BE98A8C1DB547450065A8D3 /* AppDelegate.swift */,
 				1BE98A8E1DB547450065A8D3 /* ViewController.swift */,
 				1BE98A901DB547450065A8D3 /* Main.storyboard */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BE98ABE1DB5479A0065A8D3 /* NewYorkTimesAPIClient.swift in Sources */,
+				1BE98AC01DB548790065A8D3 /* Secrets.swift in Sources */,
 				1BE98A8F1DB547450065A8D3 /* ViewController.swift in Sources */,
 				1BE98A8D1DB547450065A8D3 /* AppDelegate.swift in Sources */,
 				1BE98A951DB547450065A8D3 /* CallingNYTimesAPI.xcdatamodeld in Sources */,
