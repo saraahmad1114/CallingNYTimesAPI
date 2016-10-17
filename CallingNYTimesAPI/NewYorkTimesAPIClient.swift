@@ -12,6 +12,8 @@ class NewYorkTimesAPIClient {
 
     class func getBestSellerInformationWith (completion:(NSArray)->()){
         
+        var booksArrayOfDictionary : [NSDictionary] = []
+        
         let url = "https://api.nytimes.com/svc/books/v3/lists/best-sellers/history.json?api-key=\(Secrets.NYTimesAPIKey)"
         
         let nsURL = NSURL(string: url)
@@ -33,15 +35,19 @@ class NewYorkTimesAPIClient {
             
             for singleDictionary in unwrappedResultsArray {
             
-                let singleDictionary = singleDictionary as? NSDictionary
+                let dictionary = singleDictionary as? NSDictionary
                 
+                guard let unwrappedDictionary = dictionary else {print("DICTIONARY DID NOT UNWRAP"); return}
+                
+                booksArrayOfDictionary.append(unwrappedDictionary)
+                
+                completion(booksArrayOfDictionary)
             
             }
             
-            
         }
         
-        
+       task.resume()
     }
 
 }
