@@ -10,9 +10,28 @@ import Foundation
 
 class NewYorkTimesAPIClient {
 
-    class func getBestSellerInformationWith (completion:()->()){
-    
-    
+    class func getBestSellerInformationWith (completion:(NSArray)->()){
+        
+        let url = "https://api.nytimes.com/svc/books/v3/lists/best-sellers/history.json?api-key=\(Secrets.NYTimesAPIKey)"
+        
+        let nsURL = NSURL(string: url)
+        
+        guard let unwrappedNSURL = nsURL else {print("NSURL DID NOT UNWRAP"); return}
+        
+        let request = NSURLRequest(URL: unwrappedNSURL)
+        
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { (data, response, error) in
+            guard let unwrappedData = data else {print("DATA DID NOT UNWRAP"); return}
+            
+            let responseDictionary = try? NSJSONSerialization.JSONObjectWithData(unwrappedData, options: []) as! NSDictionary
+            
+            
+        }
+        
+        
+        
+        
+        
     }
 
 }

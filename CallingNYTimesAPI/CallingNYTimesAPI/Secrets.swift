@@ -10,5 +10,5 @@ import Foundation
 
 struct Secrets {
 
-    let NYTimesAPIKey = "04bbe69be2134d6db5f7de899f415681"
+   static let NYTimesAPIKey = "04bbe69be2134d6db5f7de899f415681"
 }
