@@ -15,6 +15,7 @@
 		1BE98A9A1DB547450065A8D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BE98A981DB547450065A8D3 /* LaunchScreen.storyboard */; };
 		1BE98AA51DB547450065A8D3 /* CallingNYTimesAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE98AA41DB547450065A8D3 /* CallingNYTimesAPITests.swift */; };
 		1BE98AB01DB547450065A8D3 /* CallingNYTimesAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE98AAF1DB547450065A8D3 /* CallingNYTimesAPIUITests.swift */; };
+		1BE98ABE1DB5479A0065A8D3 /* NewYorkTimesAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE98ABD1DB5479A0065A8D3 /* NewYorkTimesAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1BE98AAB1DB547450065A8D3 /* CallingNYTimesAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CallingNYTimesAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE98AAF1DB547450065A8D3 /* CallingNYTimesAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallingNYTimesAPIUITests.swift; sourceTree = "<group>"; };
 		1BE98AB11DB547450065A8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BE98ABD1DB5479A0065A8D3 /* NewYorkTimesAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewYorkTimesAPIClient.swift; path = ../NewYorkTimesAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		1BE98A8B1DB547450065A8D3 /* CallingNYTimesAPI */ = {
 			isa = PBXGroup;
 			children = (
+				1BE98ABD1DB5479A0065A8D3 /* NewYorkTimesAPIClient.swift */,
 				1BE98A8C1DB547450065A8D3 /* AppDelegate.swift */,
 				1BE98A8E1DB547450065A8D3 /* ViewController.swift */,
 				1BE98A901DB547450065A8D3 /* Main.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE98ABE1DB5479A0065A8D3 /* NewYorkTimesAPIClient.swift in Sources */,
 				1BE98A8F1DB547450065A8D3 /* ViewController.swift in Sources */,
 				1BE98A8D1DB547450065A8D3 /* AppDelegate.swift in Sources */,
 				1BE98A951DB547450065A8D3 /* CallingNYTimesAPI.xcdatamodeld in Sources */,
@@ -486,6 +490,7 @@
 				1BE98AB61DB547450065A8D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BE98AB71DB547450065A8D3 /* Build configuration list for PBXNativeTarget "CallingNYTimesAPITests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				1BE98AB91DB547450065A8D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1BE98ABA1DB547450065A8D3 /* Build configuration list for PBXNativeTarget "CallingNYTimesAPIUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +508,7 @@
 				1BE98ABC1DB547450065A8D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
