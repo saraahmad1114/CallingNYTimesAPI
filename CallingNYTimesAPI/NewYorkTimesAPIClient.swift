@@ -25,11 +25,21 @@ class NewYorkTimesAPIClient {
             
             let responseDictionary = try? NSJSONSerialization.JSONObjectWithData(unwrappedData, options: []) as! NSDictionary
             
+            guard let unwrappedResponseDictionary = responseDictionary else {print("RESPONSE DICTIONARY DID NOT UNWRAP"); return}
+            
+            let resultsArray = unwrappedResponseDictionary["results"] as? NSArray
+            
+            guard let unwrappedResultsArray = resultsArray else {print("RESULTS ARRAY DID NOT UNWRAP"); return}
+            
+            for singleDictionary in unwrappedResultsArray {
+            
+                let singleDictionary = singleDictionary as? NSDictionary
+                
+            
+            }
+            
             
         }
-        
-        
-        
         
         
     }
